@@ -1,10 +1,7 @@
- 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
- 
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -17,9 +14,9 @@ section {
 }
 /* MENU */
 #menu {
-   background-color: rgb(26, 72, 255);
-   background-image: url("../images/ciudad.jpg");
-   background-size: cover;
+  background-color: rgb(26, 72, 255);
+  background-image: url("../images/ciudad.jpg");
+  background-size: cover;
   display: grid;
   grid-template-columns: repeat(4, 200px);
   grid-template-rows: repeat(2, 200px);
@@ -90,11 +87,11 @@ section {
 }
 
 #menu .projects-tile .front {
-    background-image: url(../images/ciudad1.jpg);
+  background-image: url(../images/ciudad1.jpg);
 }
 
 #menu .posts-tile .front {
-    background-image: url(../images/electrico.jpg);
+  background-image: url(../images/electrico.jpg);
 }
 #menu .contact-tile .front {
   background-image: url(../images/marin.png);
@@ -154,7 +151,7 @@ section {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 10px;
   padding: 10px;
-  grid-auto-flow: row;
+
   grid-template-areas:
     "main-photo main-photo main-photo photo-2 photo-2 photo-2 photo-3 photo-3 photo-4 photo-4"
     "main-photo main-photo main-photo photo-2 photo-2 photo-2 photo-3 photo-3 photo-4 photo-4"
@@ -222,8 +219,6 @@ section {
   background-image: url(../images/elefante.jpg);
 }
 
-
-
 .photo-5 {
   grid-area: photo-5;
   background-image: url(../images/electrico.jpg);
@@ -234,9 +229,9 @@ section {
   background-image: url(../images/electrico1.png);
 }
 .photo-7 {
-    grid-area: photo-7;
-    background-image: url(../images/welder.jpg);
-  }
+  grid-area: photo-7;
+  background-image: url(../images/welder.jpg);
+}
 .photo-8 {
   grid-area: photo-8;
   background-image: url(../images/montador.jpg);
@@ -368,6 +363,8 @@ section {
   align-items: center;
   box-sizing: border-box;
   font-size: 1.5rem;
+
+  margin-bottom: 10px;
 }
 #contact form input,
 #contact form textarea {
@@ -380,38 +377,47 @@ section {
 }
 
 #contact .social-networks {
-  justify-self: center;
+  color: white;
+  justify-self: start;
   padding: 10px, 0;
 }
 
 #contact .social-networks a {
   color: white;
   font-size: 1.5rem;
-margin-left: 10px;
-text-decoration: none;
+  margin-left: 30px;
+  text-decoration: none;
 }
 
 #contact .social-networks a:hover {
-    color:greenyellow  ;
-    font-size: 1.5rem;
-  margin-left: 10px;
-  }
+  color: blue;
+  font-size: 1.5rem;
+}
 
 #contact form input[type="submit"] {
   background-color: #67ca50;
   font-weight: bold;
   font-size: 28px;
-}
-.fa-brands{
-    font-size: 2.5rem;
+  cursor: pointer;
 }
 
+#contact form input[type="submit"]:hover {
+  background-color: #86ea15;
+  border-radius: 50%;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.fa-brands {
+  font-size: 3.5rem;
+}
 
 .footer {
-  background-color: blue;
-  text-align: center;
+  background-color: rgb(26, 72, 255);
+  text-align: end;
   font-size: 1.5rem;
   color: white;
+  padding: 20px;
 }
 /***************************************
             RESPONSIVE
@@ -421,8 +427,11 @@ text-decoration: none;
   #posts {
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
   }
-}
 
+  #posts .post {
+    height: 500px;
+  }
+}
 @media screen and (max-width: 800px) {
   #menu {
     display: grid;
@@ -468,21 +477,21 @@ text-decoration: none;
     grid-row: 3/4;
   }
   #projects {
-     
     grid-template-areas:
-    "main-photo main-photo main-photo main-photo main-photo main-photo main-photo main-photo main-photo main-photo"
- 
-    "photo-2 photo-2 photo-2 photo-2 photo-2 photo-3 photo-3 photo-3 photo-3 photo-3"
-    "photo-4 photo-4 photo-4 photo-4 photo-4 photo-5 photo-5 photo-5 photo-5 photo-5"
-    "photo-6 photo-6 photo-6 photo-6 photo-6 photo-7 photo-7 photo-7 photo-7 photo-7"
-    "photo-8 photo-8 photo-8 photo-8 photo-9 photo-9 photo-9 photo-9 photo-9 photo-9"
-    "photo-10 photo-10 photo-10 photo-10 photo-10 photo-11 photo-11 photo-11 photo-11 photo-11"
-    "photo-12 photo-12 photo-12 photo-12 photo-12 photo-13 photo-13 photo-13 photo-13 photo-13"
-    "photo-14 photo-14 photo-14 photo-14 photo-14 photo-15 photo-15 photo-15 photo-15 photo-15"
-    "photo-16 photo-16 photo-16 photo-16 photo-16 photo-17 photo-17 photo-17 photo-17 photo-17";
+      "main-photo main-photo main-photo main-photo main-photo main-photo main-photo main-photo main-photo main-photo"
+      "photo-2 photo-2 photo-2 photo-2 photo-2 photo-3 photo-3 photo-3 photo-3 photo-3"
+      "photo-4 photo-4 photo-4 photo-4 photo-4 photo-5 photo-5 photo-5 photo-5 photo-5"
+      "photo-6 photo-6 photo-6 photo-6 photo-6 photo-7 photo-7 photo-7 photo-7 photo-7"
+      "photo-8 photo-8 photo-8 photo-8 photo-9 photo-9 photo-9 photo-9 photo-9 photo-9"
+      "photo-10 photo-10 photo-10 photo-10 photo-10 photo-11 photo-11 photo-11 photo-11 photo-11"
+      "photo-12 photo-12 photo-12 photo-12 photo-12 photo-13 photo-13 photo-13 photo-13 photo-13"
+      "photo-14 photo-14 photo-14 photo-14 photo-14 photo-15 photo-15 photo-15 photo-15 photo-15"
+      "photo-16 photo-16 photo-16 photo-16 photo-16 photo-17 photo-17 photo-17 photo-17 photo-17";
+  }
 
-     
-     
+  #projects .tile {
+    width: 100%;
+    height: 500px;
   }
 
   #contact {
@@ -541,9 +550,38 @@ text-decoration: none;
     grid-template: repeat(6, 1fr) / repeat(1, 1fr);
   }
 
-  #posts .title {
-    display: grid;
+  #posts .post {
+    height: 500px;
   }
 
- 
+  #projects {
+    grid-template-areas:
+      "main-photo"
+      "photo-2"
+      "photo-3"
+      "photo-4"
+      "photo-5"
+      "photo-6"
+      "photo-7"
+      "photo-8"
+      "photo-9"
+      "photo-10"
+      "photo-11"
+      "photo-12"
+      "photo-13"
+      "photo-14"
+      "photo-15"
+      "photo-16"
+      "photo-17";
+  }
+
+  #projects .tile {
+    width: 80%;
+    height: 500px;
+  }
+
+  #contact {
+    padding: 0, 20px;
+    grid-template: auto 100px / 100%;
+  }
 }
